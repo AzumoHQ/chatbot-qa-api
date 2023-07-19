@@ -10,3 +10,4 @@ module.exports.verifyGetMe = (response) => {
         "stripeCustomerId": String
     }`)
 }
+

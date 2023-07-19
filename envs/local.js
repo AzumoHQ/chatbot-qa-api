@@ -15,3 +15,4 @@ before(function() {
     context.data = data;
     context.chance = new Chance();
 })
+

@@ -11,3 +11,4 @@ module.exports.postValidateToken = (token) => {
         .post(`/auth/validateToken`)
         .send({token: token})
 };
+

@@ -5,3 +5,4 @@ module.exports.getMe = (token) => {
         .get(`/user/me`)
         .set('Authorization', `Bearer ${token}`)
 };
+
