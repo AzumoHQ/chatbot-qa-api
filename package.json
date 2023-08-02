@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "regression-local": "mocha --file ./envs/local.js --spec ./test/suites/regression"
+    "regression-local": "mocha --file ./envs/local.js --spec ./test/suites/regression",
+    "regression-dev": "mocha --file ./envs/dev.js --spec ./test/suites/regression",
+    "regression-stage": "mocha --file ./envs/stage.js --spec ./test/suites/regression"
   },
   "author": "Jonathan Haslop",
   "license": "ISC",

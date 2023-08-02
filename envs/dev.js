@@ -10,9 +10,8 @@ const Chance = require('chance');
 
 before(function() {
     console.log('     Using LOCAL environment     '.black.bgWhite);
-    context.hostname = 'https://staging-server.chatbot-ninja.net';
+    context.hostname = 'https://development-server.chatbot-ninja.net';
     context.api = supertest(context.hostname);
     context.data = data;
     context.chance = new Chance();
 })
-
