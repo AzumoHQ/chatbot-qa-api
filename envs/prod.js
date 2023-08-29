@@ -10,7 +10,8 @@ const Chance = require('chance');
 
 before(function() {
     console.log('     Using LOCAL environment     '.black.bgWhite);
-    context.hostname = 'http://localhost:1338';
+    // COMMENTED BECAUSE WE DON'T WANT THIS EXECUTED IN PROD UNTIL WE TAKE EVERYTHING IN COUNT SINCE IT HAS BILLING FUNCTIONALITIES
+    // context.hostname = 'https://charli-server.azumo.com';
     context.api = supertest(context.hostname);
     context.data = data;
     context.chance = new Chance();
